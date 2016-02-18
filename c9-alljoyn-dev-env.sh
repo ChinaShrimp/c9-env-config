@@ -1,5 +1,6 @@
 #!/bin/sh
 # Build tools and libs
+sudo apt-get update
 sudo apt-get install -y build-essential libgtk2.0-dev \
   libssl-dev xsltproc libxml2-dev libcap-dev aptitude
 sudo aptitude install -y gcc-multilib g++-multilib
