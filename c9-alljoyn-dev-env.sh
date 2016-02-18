@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Build tools and libs
 sudo apt-get update
 sudo apt-get install -y build-essential libgtk2.0-dev \
