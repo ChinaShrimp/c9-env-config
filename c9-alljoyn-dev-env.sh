@@ -75,7 +75,9 @@ export JAVA_HOME="/usr/lib/jvm/jdk1.8.0_73"
 export CLASSPATH="/usr/share/java/junit-4.9.jar"
 EOF
 
-source ~/.bashrc
+export AJ_ROOT=$HOME/workspace/alljoyn
+export JAVA_HOME="/usr/lib/jvm/jdk1.8.0_73"
+export CLASSPATH="/usr/share/java/junit-4.9.jar"
 
 git clone https://git.allseenalliance.org/gerrit/core/alljoyn.git \
     $AJ_ROOT/core/alljoyn
