@@ -80,5 +80,79 @@ export AJ_ROOT=$HOME/workspace/alljoyn
 export JAVA_HOME="/usr/lib/jvm/jdk1.8.0_73"
 export CLASSPATH="/usr/share/java/junit-4.9.jar"
 
+# download alljoyn codes
 git clone https://git.allseenalliance.org/gerrit/core/alljoyn.git \
     $AJ_ROOT/core/alljoyn
+cd $AJ_ROOT/core/alljoyn
+git checkout v15.04b
+
+git clone https://git.allseenalliance.org/gerrit/core/ajtcl \
+    $AJ_ROOT/core/ajtcl
+cd $AJ_ROOT/core/ajtcl
+git checkout v15.04b
+
+git clone https://git.allseenalliance.org/gerrit/core/alljoyn-js \
+    $AJ_ROOT/core/alljoyn-js
+cd $AJ_ROOT/core/alljoyn-js
+git checkout v15.04
+
+# v15.09 required
+git clone https://git.allseenalliance.org/gerrit/core/securitymgr \
+    $AJ_ROOT/core/securitymgr
+
+# v15.09 required
+git clone https://git.allseenalliance.org/gerrit/core/test \
+    $AJ_ROOT/core/test
+
+git clone  https://git.allseenalliance.org/gerrit/services/base \
+    $AJ_ROOT/services/base
+cd $AJ_ROOT/services/base
+git checkout v15.04
+
+git clone https://git.allseenalliance.org/gerrit/services/base_tcl \
+    $AJ_ROOT/services/base_tcl
+cd $AJ_ROOT/services/base_tcl
+git checkout v15.04
+
+git clone https://git.allseenalliance.org/gerrit/services/notification_viewer \
+    $AJ_ROOT/services/notification_viewer
+
+git clone https://git.allseenalliance.org/gerrit/gateway/gwagent \
+    $AJ_ROOT/gateway/gwagent
+cd $AJ_ROOT/gateway/gwagent
+git checkout v15.04
+
+git clone https://git.allseenalliance.org/gerrit/gateway/update \
+    $AJ_ROOT/gateway/update
+
+git clone https://git.allseenalliance.org/gerrit/dsb $AJ_ROOT/dsb
+
+git clone https://git.allseenalliance.org/gerrit/data/datadriven_api \
+    $AJ_ROOT/data/datadriven_api
+cd $AJ_ROOT/data/datadriven_api
+git checkout v15.04
+
+git clone https://git.allseenalliance.org/gerrit/devtools/codegen \
+    $AJ_ROOT/devtools/codegen
+    
+git clone https://git.allseenalliance.org/gerrit/devtools/aj_nodejs \
+    $AJ_ROOT/devtools/aj_nodejs
+
+# no 15.04 tag
+git clone https://git.allseenalliance.org/gerrit/devtools/manifest \
+    $AJ_ROOT/devtools/manifest
+    
+git clone https://git.allseenalliance.org/gerrit/contributed_applications/dashboard \
+    $AJ_ROOT/contributed_applications/dashboard
+    
+git clone https://git.allseenalliance.org/gerrit/extras/automation \
+    $AJ_ROOT/extras/automation
+
+git clone https://git.allseenalliance.org/gerrit/extras/hackfest \
+    $AJ_ROOT/extras/hackfest
+    
+git clone https://git.allseenalliance.org/gerrit/extras/tutorials \
+    $AJ_ROOT/extras/tutorials
+
+git clone https://git.allseenalliance.org/gerrit/extras/webdocs \
+    $AJ_ROOT/extras/webdocs
