@@ -72,9 +72,27 @@ sudo apt-get install -y ant
 cd $HOME
 cat << EOF >> ~/.bashrc
 export AJ_ROOT=$HOME/workspace/alljoyn
+# <TARGET CPU> can be either x86_64, x86, or whatever value you set for CPU= when running SCons
+export AJ_DIST=$AJ_ROOT/core/alljoyn/build/linux/x86_64/debug/dist
 export JAVA_HOME="/usr/lib/jvm/jdk1.8.0_73"
 export CLASSPATH="/usr/share/java/junit-4.9.jar"
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/ubuntu/workspace/alljoyn/core/alljoyn/build/linux/x86_64/debug/dist/cpp/lib
+# Add header include directories
+export CXXFLAGS="$CXXFLAGS \
+    -I$AJ_DIST/cpp/inc \
+    -I$AJ_DIST/about/inc \
+    -I$AJ_DIST/services_common/inc \
+    -I$AJ_DIST/notification/inc \
+    -I$AJ_DIST/controlpanel/inc \
+    -I$AJ_DIST/services_common/inc \
+    -I$AJ_DIST/samples_common/inc"
+# Configure linker to include required libs
+export LDFLAGS="$LDFLAGS \
+    -L$AJ_DIST/cpp/lib \
+    -L$AJ_DIST/about/lib \
+    -L$AJ_DIST/services_common/lib \
+    -L$AJ_DIST/notification/lib \
+    -L$AJ_DIST/controlpanel/lib"
 EOF
 
 export AJ_ROOT=$HOME/workspace/alljoyn
@@ -158,3 +176,5 @@ git clone https://git.allseenalliance.org/gerrit/extras/tutorials \
 
 git clone https://git.allseenalliance.org/gerrit/extras/webdocs \
     $AJ_ROOT/extras/webdocs
+    
+echo "done..."
