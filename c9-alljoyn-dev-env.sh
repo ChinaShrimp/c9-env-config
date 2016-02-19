@@ -74,11 +74,13 @@ cat << EOF >> ~/.bashrc
 export AJ_ROOT=$HOME/workspace/alljoyn
 export JAVA_HOME="/usr/lib/jvm/jdk1.8.0_73"
 export CLASSPATH="/usr/share/java/junit-4.9.jar"
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/ubuntu/workspace/alljoyn/core/alljoyn/build/linux/x86_64/debug/dist/cpp/lib
 EOF
 
 export AJ_ROOT=$HOME/workspace/alljoyn
 export JAVA_HOME="/usr/lib/jvm/jdk1.8.0_73"
 export CLASSPATH="/usr/share/java/junit-4.9.jar"
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/ubuntu/workspace/alljoyn/core/alljoyn/build/linux/x86_64/debug/dist/cpp/lib
 
 # download alljoyn codes
 git clone https://git.allseenalliance.org/gerrit/core/alljoyn.git \
