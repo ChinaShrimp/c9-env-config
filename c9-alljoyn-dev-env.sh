@@ -106,75 +106,77 @@ git clone https://git.allseenalliance.org/gerrit/core/alljoyn.git \
 cd $AJ_ROOT/core/alljoyn
 git checkout v15.04b
 
-git clone https://git.allseenalliance.org/gerrit/core/ajtcl \
+git clone https://git.allseenalliance.org/gerrit/core/ajtcl.git \
     $AJ_ROOT/core/ajtcl
 cd $AJ_ROOT/core/ajtcl
 git checkout v15.04b
 
-git clone https://git.allseenalliance.org/gerrit/core/alljoyn-js \
+git clone https://git.allseenalliance.org/gerrit/core/alljoyn-js.git \
     $AJ_ROOT/core/alljoyn-js
 cd $AJ_ROOT/core/alljoyn-js
 git checkout v15.04
 
 # v15.09 required
-git clone https://git.allseenalliance.org/gerrit/core/securitymgr \
+git clone https://git.allseenalliance.org/gerrit/core/securitymgr.git \
     $AJ_ROOT/core/securitymgr
 
 # v15.09 required
-git clone https://git.allseenalliance.org/gerrit/core/test \
+git clone https://git.allseenalliance.org/gerrit/core/test.git \
     $AJ_ROOT/core/test
 
-git clone  https://git.allseenalliance.org/gerrit/services/base \
+git clone  https://git.allseenalliance.org/gerrit/services/base.git \
     $AJ_ROOT/services/base
 cd $AJ_ROOT/services/base
 git checkout v15.04
 
-git clone https://git.allseenalliance.org/gerrit/services/base_tcl \
+git clone https://git.allseenalliance.org/gerrit/services/base_tcl.git \
     $AJ_ROOT/services/base_tcl
 cd $AJ_ROOT/services/base_tcl
 git checkout v15.04
 
-git clone https://git.allseenalliance.org/gerrit/services/notification_viewer \
+git clone https://git.allseenalliance.org/gerrit/services/notification_viewer.git \
     $AJ_ROOT/services/notification_viewer
 
-git clone https://git.allseenalliance.org/gerrit/gateway/gwagent \
+git clone https://git.allseenalliance.org/gerrit/gateway/gwagent.git \
     $AJ_ROOT/gateway/gwagent
 cd $AJ_ROOT/gateway/gwagent
 git checkout v15.04
 
-git clone https://git.allseenalliance.org/gerrit/gateway/update \
+git clone https://git.allseenalliance.org/gerrit/gateway/update.git \
     $AJ_ROOT/gateway/update
 
 git clone https://git.allseenalliance.org/gerrit/dsb $AJ_ROOT/dsb
 
-git clone https://git.allseenalliance.org/gerrit/data/datadriven_api \
+git clone https://git.allseenalliance.org/gerrit/data/datadriven_api.git \
     $AJ_ROOT/data/datadriven_api
 cd $AJ_ROOT/data/datadriven_api
 git checkout v15.04
 
-git clone https://git.allseenalliance.org/gerrit/devtools/codegen \
+git clone https://git.allseenalliance.org/gerrit/devtools/codegen.git \
     $AJ_ROOT/devtools/codegen
+cd $AJ_ROOT/devtools/codegen
+git checkout v15.04
     
-git clone https://git.allseenalliance.org/gerrit/devtools/aj_nodejs \
+git clone https://git.allseenalliance.org/gerrit/devtools/aj_nodejs.git \
     $AJ_ROOT/devtools/aj_nodejs
 
 # no 15.04 tag
-git clone https://git.allseenalliance.org/gerrit/devtools/manifest \
+git clone https://git.allseenalliance.org/gerrit/devtools/manifest.git \
     $AJ_ROOT/devtools/manifest
     
-git clone https://git.allseenalliance.org/gerrit/contributed_applications/dashboard \
+git clone https://git.allseenalliance.org/gerrit/contributed_applications/dashboard.git \
     $AJ_ROOT/contributed_applications/dashboard
     
-git clone https://git.allseenalliance.org/gerrit/extras/automation \
+git clone https://git.allseenalliance.org/gerrit/extras/automation.git \
     $AJ_ROOT/extras/automation
 
-git clone https://git.allseenalliance.org/gerrit/extras/hackfest \
+git clone https://git.allseenalliance.org/gerrit/extras/hackfest.git \
     $AJ_ROOT/extras/hackfest
     
-git clone https://git.allseenalliance.org/gerrit/extras/tutorials \
+git clone https://git.allseenalliance.org/gerrit/extras/tutorials.git \
     $AJ_ROOT/extras/tutorials
 
-git clone https://git.allseenalliance.org/gerrit/extras/webdocs \
+git clone https://git.allseenalliance.org/gerrit/extras/webdocs.git \
     $AJ_ROOT/extras/webdocs
     
 echo "done..."
